@@ -4,18 +4,34 @@
 <body>
   <div id="container">
     <header id="header">
-      <img
-        id="header-img"
-        alt="jimny logo"
-        src="https://seeklogo.com/images/J/Jimny_Suzuki-logo-A802C941F9-seeklogo.com.png"
-      />
-      <nav id="nav-bar">
-        <a class="nav-link" href="#features">Features</a>
-        <a class="nav-link" href="#test-drive">Test Drive</a>
-        <a class="nav-link" href="#pricing">Pricing</a>
-      </nav>
+      <div>
+        <img
+          id="header-img"
+          alt="jimny logo"
+          src="https://seeklogo.com/images/J/Jimny_Suzuki-logo-A802C941F9-seeklogo.com.png"
+        />
+        <nav id="nav-bar">
+          <a style="color: blue" class="nav-link" href="#features">Features</a>
+          <a style="color: #ed1c24" class="nav-link" href="#test-drive"
+            >Test Drive</a
+          >
+          <a style="color: blue" class="nav-link" href="#pricing">Pricing</a>
+        </nav>
+      </div>
     </header>
     <main>
+      <section>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <label for="email">! Apply for Jimny today !</label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="Enter your email here"
+          />
+          <input id="submit" type="submit" value="Submit" />
+        </form>
+      </section>
       <section id="features">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum
@@ -58,26 +74,12 @@
           vitae, bibendum cursus ligula. Curabitur mattis faucibus laoreet.
         </p>
       </section>
-      <section id="test-drive">
-        <div class="embed-container">
-          <iframe id="video" src="https://www.youtube.com/embed/lvwd5vYHNIY">
-          </iframe>
-        </div>
-      </section>
+      <div class="embed-container" id="test-drive">
+        <iframe id="video" src="https://www.youtube.com/embed/lvwd5vYHNIY">
+        </iframe>
+      </div>
+
       <section id="pricing"></section>
-      <section>
-        <form id="form" action="https://www.freecodecamp.com/email-submit">
-          <label for="email">Let's chat!</label>
-          <input
-            id="email"
-            type="email"
-            required
-            name="email"
-            placeholder="Enter your email"
-          />
-          <input id="submit" type="submit" value="Submit" />
-        </form>
-      </section>
     </main>
   </div>
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
